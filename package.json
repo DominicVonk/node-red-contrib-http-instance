@@ -1,5 +1,5 @@
 {
-  "name": "node-red-contrib-http-instance",
+  "name": "@dominicvonk/node-red-contrib-http-instance",
   "version": "1.0.1",
   "description": "Http(s) server instance with in and response nodes",
   "scripts": {
