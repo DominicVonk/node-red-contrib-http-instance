@@ -22,7 +22,8 @@ module.exports = function (RED) {
 
         const app = express();
 
-        app.use(cors())
+        app.use(cors());
+
         if (config.useHttps) {
             var cert, key;
 
