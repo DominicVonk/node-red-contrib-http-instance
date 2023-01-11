@@ -5,8 +5,9 @@ module.exports = function (RED) {
     const http = require('http');
     const https = require('https');
     const fs = require('fs');
+    const cors = require('cors');
 
-    function InstServer(config) {
+    function InstServer (config) {
         RED.nodes.createNode(this, config);
 
         if (!config.port) {
@@ -21,6 +22,7 @@ module.exports = function (RED) {
 
         const app = express();
 
+        app.use(cors())
         if (config.useHttps) {
             var cert, key;
 
